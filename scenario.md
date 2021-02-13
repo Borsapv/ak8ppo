@@ -1,4 +1,14 @@
-  
+Nezapomenout 
+ - max. počty studentů v rámci výukové skupiny
+ - nejen vkládat, ale i mazat
+ - každý předmět má default č. na kolik studentů rozdělovat skupinky
+ - velikost skupiny - když je menší než max., tak to má vliv na počet hodin zkoušení = body pro učitele (štítek zkoušení, ale je to dobrovolná funkcionalita). Když je větší = více pracovních štítků (př. max 12, studentů je ve skupince 18, vytvoří se 2 štítky - 12 a 6)
+ 
+ - studijní skupinky - SWI, let.sem., kombin. = skupinka, KYB, let.se., prez = skupinka , KYB, let.se., komb = skupinka 
+ 
+ - počet týdnů * počet hodin v týdnu = celkový počet hodin za semestr (šítek za celý semestr)
+
+
 DOTAZY
 Proč pro účely této aplikace/naplnění úvazku prací potřebuje být počet studentů znám? 
 
