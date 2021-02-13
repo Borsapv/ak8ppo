@@ -1,24 +1,28 @@
+  
+DOTAZY
+Proč pro účely této aplikace/naplnění úvazku prací potřebuje být počet studentů znám? 
+
 Cíl
 Vytvořit aplikaci pro tajemníka ústavu, která bude sloužit k řízení úvazků zaměstnanců.
 
-1) Vytvořit kartu studijního plánu s jednotlivými předměty
+1) Vytvořit kartu studijního plánu s jednotlivými obory a předměty
     
 2) Vytvořit kartu zaměstnance
 
-3) Vytvořit kartu studijní skupiny
+3) Vytvořit kartu studijního oboru (pro přiřazení počtu studentů - tím každý předmět zná počet studentů)
 
 4) Propojení předmětů a studijních skupin = štítek 
 
 5) Přiřazení zaměstnanců ke štítkům
     Musí být pokryta hodinová dotace na jednotlivé předměty (musí to někdo odučit), současně musí být pohlídáno, že zaměstnanci učí celkově počet hodin dle svého úvazku. (500b = 100%)
     
-    
+
 Modely 
 1) Studijní plány
     - Zobrazí formulář s poli, tlačítko save ... 
-    - Do pole Studijní plán načte již zadané studijní plány s možností výběru.
+    - Do pole Studijní plán načte již zadané studijní plány a obory s možností výběru. Po výběru plánu se dofiltrují dostupné obory. 
     - Další zadané údaje uloží po stistku save do databáze jako jednotlivé předměty (povinné, nepovinné pole?) a přiřadí je ke zvolenému plánu. 
-    - Pokud plán neexistuje, vytvoří se v db nový záznam. 
+    - Pokud plán nebo obor neexistuje, vytvoří se v db nový záznam.  
 
     
 2) Zaměstnanci
@@ -47,4 +51,4 @@ Databáze
     - tabulka studijních oborů
     - tabulka předmětů
     - tabulka zaměstnanců
-    - tabulka počtů studentů
+    - tabulka počtů studentů ??? (nebo přiřazovat rovnou k oboru)
