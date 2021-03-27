@@ -8,34 +8,39 @@ c = conn.cursor()
 
 # create tables predmety, zamestnanci, obory, stitek, vahy pacovnich bodu
 c.execute(""" CREATE TABLE predmet (
-    id INTEGER NOT NULL PRIMARY KEY,
-    
-)
+    id INTEGER NOT NULL PRIMARY KEY
+    )
 """)
 
 c.execute(""" CREATE TABLE obor (
-    id INTEGER NOT NULL PRIMARY KEY,
-)
+    id INTEGER NOT NULL PRIMARY KEY
+    )
 """)
 
 c.execute(""" CREATE TABLE predmet_obor (
-    id INTEGER NOT NULL PRIMARY KEY,
-)
+    id INTEGER NOT NULL PRIMARY KEY
+    )
 """)
 
 c.execute(""" CREATE TABLE zamestnanec (
     id INTEGER NOT NULL PRIMARY KEY,
-)
+    name STRING, 
+    surname STRING,
+    mail_work STRING,
+    mail_private STRING,
+    phone_number STRING,
+    
+    )
 """)
 
 c.execute(""" CREATE TABLE stitek (
-    id INTEGER NOT NULL PRIMARY KEY,
-)
+    id INTEGER NOT NULL PRIMARY KEY
+    )
 """)
 
 c.execute(""" CREATE TABLE vahy_pracovnich_bodu (
-    id INTEGER NOT NULL PRIMARY KEY,
-)
+    id INTEGER NOT NULL PRIMARY KEY
+    )
 """)
 
 #Commit commands
