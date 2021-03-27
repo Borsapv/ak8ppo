@@ -4,12 +4,15 @@ from tkinter import *
 root = Tk()
 root.title("Nový zaměstnanec")
 
+def send_form():
+    return
+
 # set fields and buttons
 name_lbl = Label(root, text="Jméno")
 name_inpt = Entry(root)
 
-surname_lbl = Label(root, text="Příjmení")
-surname_inpt = Entry(root)
+last_name_lbl = Label(root, text="Příjmení")
+last_name_inpt = Entry(root)
 
 mail_work_lbl = Label(root, text="Pracovní email")
 mail_work_inpt = Entry(root)
@@ -20,15 +23,15 @@ mail_private_inpt = Entry(root)
 phone_number_lbl = Label(root, text="Telefon")
 phone_number_inpt = Entry(root)
 
-send_btn = Button(root, text="Uložit")
+send_btn = Button(root, text="Uložit", command=send_form)
 
 
 # place created fields on the screen - using grid system
 name_lbl.grid(row=0, column=0)
 name_inpt.grid(row=0, column=1, padx=20)
 
-surname_lbl.grid(row=1, column=0)
-surname_inpt.grid(row=1, column=1, padx=20)
+last_name_lbl.grid(row=1, column=0)
+last_name_inpt.grid(row=1, column=1, padx=20)
 
 mail_work_lbl.grid(row=2, column=0)
 mail_work_inpt.grid(row=2, column=1, padx=20)
