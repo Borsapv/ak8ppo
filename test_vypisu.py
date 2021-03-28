@@ -1,0 +1,4 @@
+import zamestanecFunctions
+
+zamestanecFunctions.show_all_employees()
+zamestanecFunctions.show_all_subjects()
