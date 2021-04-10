@@ -54,12 +54,7 @@ def create_stitky():
         course_type = "semináře"
         stitky_values = (course_name, course_type, language_box.get(), hours, completion_type_box.get(), max_students_box.get())
         c.execute(Q3, stitky_values)
-    '''
-    sql_cmd = "INSERT INTO courses (course_abbr, course_name, weeks, hours_p, hours_c, hours_s, completion_type, language, max_students) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
-    values = (course_abbr_box.get(), course_name_box.get(), weeks_box.get(), hours_p_box.get(), hours_c_box.get(), hours_s_box.get(), completion_type_box.get(), language_box.get(),max_students_box.get())
 
-    c.execute(sql_cmd, values)
-    '''
     mydb.commit()
     clear_fields()
 
@@ -75,15 +70,12 @@ def add_course():
     mydb.commit()
     clear_fields()
 
-
+#function to show all courses in new form.
 def show_courses():
     employees_screen = Tk()
     employees_screen.title("Seznam předmětů")
     employees_screen.geometry("600x400")
-    '''
-    id_label = Label(employees_screen, text="ID")
-    id_label.grid(row=0, column=5)
-    '''
+
     c.execute("SELECT * FROM courses")
     courses_table = c.fetchall()
 
@@ -93,6 +85,21 @@ def show_courses():
             emp_list = Label(employees_screen, text=co)
             emp_list.grid(row=index+1, column=col, padx=5, stick=W)
             col += 1
+
+#function to show all stitky related to a selected course.
+def show_course_stitky():
+    # get ID zadane uzivatelem
+    # vytvorit novy screen
+    # select * from stitky where id
+    #
+    #
+    #
+    return
+
+    c.execute("SELECT * FROM stitky")
+    table = c.fetchall()
+    for col in table:
+        print(col)
 
 
 def show_stitky():
